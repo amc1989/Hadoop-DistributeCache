@@ -24,7 +24,12 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-
+/**
+ * 
+ * @author zhulei
+ * 对于一些配置信息，我们不要使用配置文件的，hadoop提供了分布式缓存，正好被用来加载配置文件
+ * 这个mapreduce就是介绍如何使用分布式缓存
+ */
 
 public class wenxinfre {
 	private static Log logger = LogFactory.getLog(wenxinfre.class);
